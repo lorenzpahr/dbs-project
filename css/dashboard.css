@@ -1,0 +1,100 @@
+/*
+* === GENERAL SECTION ===
+*/
+
+:root{
+	--main-bg-color: #333333;
+	--main-text-color: #e54747;
+	--comment-text-color: white;
+	--comment-bg-color: #424242;
+  --dashboard-bg-color: #2d2d2d;
+}
+
+body{
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color);
+}
+
+/*
+* === dashboard.php SECTION ===
+*/
+.dashboard{
+	margin-top: 20px;
+}
+
+.row {
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > [class*='col'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard_image{
+	/* NOTE: The background is set as INLINE CSS, because of dynamic links*/
+	height: 200px;
+	width: 200px;
+  margin: 10px 0 10px 25px;
+  border-radius: 100px;
+}
+
+.header_style{
+	color: white;
+}
+
+.dashboard_header{
+  border-radius: 25px 25px 0 0;
+  background-color: var(--dashboard-bg-color);
+}
+
+.dashboard_title > h1 {
+	font-size: 100px;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.dashboard_statistics{
+  background-color: var(--dashboard-bg-color);
+}
+
+.dashboard_statistics > h1, h3 {
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.dashboard_statistics > h3:last-child{
+  padding-bottom: 20px;
+}
+
+.dashboard_createPost{
+	background-color: var(--dashboard-bg-color);
+  border-radius: 0 0 25px 25px;
+}
+
+.dashboard_createPost > h1{
+	margin-top: -5px;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+#titleInput, #imgURL, #titleHelp, #imgHelp{
+	width: 80%;
+	margin-left: 20px;
+}
+
+.submit_post{
+	margin-bottom: 40px;
+	margin-left: 20px;
+	width: 10%;
+}
+
+/*.dashboard_image > img{
+	max-width: 100%;
+	max-height: 100%;
+}*/
